@@ -33,7 +33,7 @@ This project documents a deep-dive health audit of a production operational data
 Only 7 FK constraints exist across the entire schema (4 tables). Referential integrity is entirely enforced at the application layer with no database-level guarantee against orphaned records.
 
 ### Duplicate Rows
-- One analytics table: ~20.7% duplicate rows — highest BI reporting risk
+- One analytics table: ~20.7% duplicate rows: highest BI reporting risk
 - One lookup table: 79 duplicates out of 99 total rows (79.8%)
 
 ### Excessive Nullability
